@@ -8,14 +8,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#14b8a6',
-        secondary: '#64748b',
-        dark: '#0f172a',
+        primary: '#FFCCCC',
+        secondary: '#C9B6E4',
+        dark: '#637A9F',
       },
       screens: {
         '2xl': '1320px',
       },
+      fontFamily: {
+        'serif': ['"Libre Baskerville"', 'serif'],
+       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };

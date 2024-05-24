@@ -52,3 +52,21 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
   darkToggle.checked = false;
 }
+
+//text
+var i = 0;
+var txt = "Hello . . .";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+// Mulai tipe otomatis setelah halaman dimuat
+window.onload = function() {
+  typeWriter();
+};
